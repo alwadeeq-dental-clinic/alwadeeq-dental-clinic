@@ -23,18 +23,19 @@ strong{overflow-wrap:anywhere}
 .person:last-child{border:0}
 .staff{background:#eff8ff;border:1px solid #b9d9ef;border-radius:10px;padding:14px;margin-bottom:10px}
 .tag{display:inline-block;background:#dff4e7;color:#11683d;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:bold;margin-top:6px}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-.gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px}
-.seals{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
-.seals img{width:125px;height:125px;object-fit:contain}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.gallery img{width:100%;height:230px;object-fit:cover;border-radius:10px}
+.seals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;align-items:center;justify-items:center}
+.seals img{width:100%;max-width:190px;height:170px;object-fit:contain;background:white;border:1px solid #e1eaf2;border-radius:12px;padding:8px}
 a{color:#1769aa;text-decoration:none}
 footer{text-align:center;background:#103b67;color:white;padding:20px;font-size:13px}
+@media(max-width:480px){.gallery img{height:170px}.seals img{height:135px}.card{padding:17px}}
 </style>
 </head>
 <body>
 
 <header class="hero">
-<img class="logo" src="file_0000000037b48210b0a0c7591ded0329.png" alt="Alwadeeq Logo">
+<img class="logo" src="file_0000000037b48210b0a0c7591ded0329.png" alt="ALWADEEQ Logo">
 <h1>ALWADEEQ DENTAL CLINIC</h1>
 <p>عيادة الودق لطب وتجميل الأسنان</p>
 <p>Professional Dental Care</p>
@@ -61,7 +62,7 @@ footer{text-align:center;background:#103b67;color:white;padding:20px;font-size:1
 <span class="tag">CLINIC EMPLOYEE</span>
 </div>
 <div class="person"><strong>KARRAR HAIDER MOHAMMED ALKABY</strong><br><small>Clinic Staff</small></div>
-<div class="person"><strong>MOHAMMED JALAL ALI ALMOSAWY</strong><br><small>Clinic Staff</small></div>
+<div class="person"><strong>MOHAMMED JALAL ALMOSAWY</strong><br><small>Clinic Staff</small></div>
 </section>
 
 <section class="card">
@@ -80,16 +81,16 @@ footer{text-align:center;background:#103b67;color:white;padding:20px;font-size:1
 <section class="card">
 <h2>Our Clinic</h2>
 <div class="gallery">
-<img src="images.jpeg" alt="Clinic photo">
-<img src="images.jpg" alt="Clinic photo">
+<img src="images.jpeg" alt="Clinic Waiting Area">
+<img src="images (2).jpeg" alt="Dental Treatment Room">
 </div>
 </section>
 
 <section class="card">
 <h2>Professional Associations</h2>
 <div class="seals">
-<img src="images (1).jpeg" alt="Iraqi Dental Association">
-<img src="images (2).jpeg" alt="Najaf Dental Association Branch">
+<img src="images.jpg" alt="Iraqi Dental Association">
+<img src="images (1).jpeg" alt="Najaf Dental Association Branch">
 </div>
 </section>
 
